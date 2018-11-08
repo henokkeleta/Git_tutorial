@@ -9,7 +9,10 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World from henok");
+   
+    int num=7;
+    int *pnum=&num;
+    *pnum=+5;
+    printf("The number is %d and our pointe is %p pointing to num and the pnum has num's address of num %p as its value is  %d",num,pnum,&num,*pnum);
     return 0;
 }
